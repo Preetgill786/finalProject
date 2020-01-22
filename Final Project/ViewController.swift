@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import CoreData
 
 class ViewController: UIViewController {
 
+    static var  managedContext: NSManagedObjectContext!
+       
     @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     

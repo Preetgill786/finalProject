@@ -280,7 +280,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5ql-me-m80"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Your Country" id="LtJ-mk-EtY" colorLabel="IBBuiltInLabel-Purple"/>
+                    <navigationItem key="navigationItem" title="Your Country" id="LtJ-mk-EtY" colorLabel="IBBuiltInLabel-Purple">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="VGE-3T-CMm">
+                            <connections>
+                                <action selector="donebtn:" destination="82y-dY-5lc" id="BhP-08-ZFi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableVieew" destination="pFK-X4-s1X" id="3oz-jG-T0z"/>
                     </connections>

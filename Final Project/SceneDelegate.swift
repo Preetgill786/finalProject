@@ -10,7 +10,8 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
-    var window: UIWindow?
+     var window: UIWindow?
+    lazy var coreDataStack = CoreDataStack(modelName: "coreData")
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -18,6 +19,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        guard let navController = window?.rootViewController as? UINavigationController,
+                     let viewController = navController.topViewController as? ViewController else {
+                      return
+                   }
+                   
+               
+                  
+                   ViewController.managedContext = coreDataStack.managedContext
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

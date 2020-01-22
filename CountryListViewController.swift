@@ -10,6 +10,8 @@ import UIKit
 
 class CountryListViewController: UIViewController {
 
+    
+    var val:String = ""
     @IBOutlet weak var tableVieew: UITableView!
     
     
@@ -102,18 +104,7 @@ class CountryListViewController: UIViewController {
         "Greece",
         "Greenland",
         "Grenada",
-        "Guadeloupe",
-        "Guam",
-        "Guatemala",
-        "Guernsey",
-        "Guinea",
-        "Guinea-Bissau",
-        "Guyana",
-        "Haiti",
-        "Heard Island and McDonald Islands",
-        "Holy See (the)",
-        "Honduras",
-        "Hong Kong",
+       
         "Hungary",
         "Iceland",
         "India",
@@ -135,17 +126,7 @@ class CountryListViewController: UIViewController {
         "Korea (the Republic of)",
         "Kuwait",
         "Kyrgyzstan",
-        "Lao People's Democratic Republic (the)",
-        "Latvia",
-        "Lebanon",
-        "Lesotho",
-        "Liberia",
-        "Libya",
-        "Liechtenstein",
-        "Lithuania",
-        "Luxembourg",
-        "Macao",
-        "Madagascar",
+       
         "Malawi",
         "Malaysia",
         "Maldives",
@@ -176,19 +157,6 @@ class CountryListViewController: UIViewController {
         "Niger (the)",
         "Nigeria",
         "Niue",
-        "Norfolk Island",
-        "Northern Mariana Islands (the)",
-        "Norway",
-        "Oman",
-        "Pakistan",
-        "Palau",
-        "Palestine, State of",
-        "Panama",
-        "Papua New Guinea",
-        "Paraguay",
-        "Peru",
-        "Philippines (the)",
-        "Pitcairn",
         "Poland",
         "Portugal",
         "Puerto Rico",
@@ -198,28 +166,7 @@ class CountryListViewController: UIViewController {
         "Russian Federation (the)",
         "Rwanda",
         "Réunion",
-        "Saint Barthélemy",
-        "Saint Helena, Ascension and Tristan da Cunha",
-        "Saint Kitts and Nevis",
-        "Saint Lucia",
-        "Saint Martin (French part)",
-        "Saint Pierre and Miquelon",
-        "Saint Vincent and the Grenadines",
-        "Samoa",
-        "San Marino",
-        "Sao Tome and Principe",
-        "Saudi Arabia",
-        "Senegal",
-        "Serbia",
-        "Seychelles",
-        "Sierra Leone",
-        "Singapore",
-        "Sint Maarten (Dutch part)",
-        "Slovakia",
-        "Slovenia",
-        "Solomon Islands",
-        "Somalia",
-        "South Africa",
+        
         "South Georgia and the South Sandwich Islands",
         "South Sudan",
         "Spain",
@@ -235,16 +182,7 @@ class CountryListViewController: UIViewController {
         "Tanzania, United Republic of",
         "Thailand",
         "Timor-Leste",
-        "Togo",
-        "Tokelau",
-        "Tonga",
-        "Trinidad and Tobago",
-        "Tunisia",
-        "Turkey",
-        "Turkmenistan",
-        "Turks and Caicos Islands (the)",
-        "Tuvalu",
-        "Uganda",
+        
         "Ukraine",
         "United Arab Emirates (the)",
         "United Kingdom of Great Britain and Northern Ireland (the)",
@@ -274,7 +212,10 @@ class CountryListViewController: UIViewController {
     }
     
 
-
+    @IBAction func donebtn(_ sender: Any) {
+        
+    }
+    
 
 }
 
@@ -294,13 +235,21 @@ extension CountryListViewController:UITableViewDelegate, UITableViewDataSource
     
     
       
-    }
-   
     
+   
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-       }
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+        
+        self.val = countryList[indexPath.row]
+        
+    }
     
+     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.accessoryType = .none
+    }
+    
+}
 
 class Harpreet: UITableViewCell{
     

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B41709423D8C11E00254CEE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41709323D8C11E00254CEE /* CoreDataStack.swift */; };
+		9B41709723D8C1B100254CEE /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9B41709523D8C1B100254CEE /* coreData.xcdatamodeld */; };
+		9B41709A23D8C34700254CEE /* MyProject+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41709823D8C34700254CEE /* MyProject+CoreDataClass.swift */; };
+		9B41709B23D8C34700254CEE /* MyProject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B41709923D8C34700254CEE /* MyProject+CoreDataProperties.swift */; };
 		9B7AAA8723D8882700124C42 /* MapViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7AAA8623D8882700124C42 /* MapViewViewController.swift */; };
 		9B7AAA8923D8885800124C42 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7AAA8823D8885800124C42 /* ListViewController.swift */; };
 		9B7AAA8B23D8887A00124C42 /* AddDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B7AAA8A23D8887A00124C42 /* AddDataViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B41709323D8C11E00254CEE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		9B41709623D8C1B100254CEE /* coreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreData.xcdatamodel; sourceTree = "<group>"; };
+		9B41709823D8C34700254CEE /* MyProject+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyProject+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9B41709923D8C34700254CEE /* MyProject+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyProject+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9B7AAA8623D8882700124C42 /* MapViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewViewController.swift; sourceTree = "<group>"; };
 		9B7AAA8823D8885800124C42 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = SOURCE_ROOT; };
 		9B7AAA8A23D8887A00124C42 /* AddDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDataViewController.swift; sourceTree = SOURCE_ROOT; };
@@ -48,6 +56,8 @@
 		9BFCE2CB23D7399100C30AFC = {
 			isa = PBXGroup;
 			children = (
+				9B41709823D8C34700254CEE /* MyProject+CoreDataClass.swift */,
+				9B41709923D8C34700254CEE /* MyProject+CoreDataProperties.swift */,
 				9BFCE2D623D7399100C30AFC /* Final Project */,
 				9BFCE2D523D7399100C30AFC /* Products */,
 			);
@@ -75,6 +85,8 @@
 				9B7AAA8823D8885800124C42 /* ListViewController.swift */,
 				9B7AAA8A23D8887A00124C42 /* AddDataViewController.swift */,
 				9B7AAA8C23D8889A00124C42 /* CountryListViewController.swift */,
+				9B41709323D8C11E00254CEE /* CoreDataStack.swift */,
+				9B41709523D8C1B100254CEE /* coreData.xcdatamodeld */,
 			);
 			path = "Final Project";
 			sourceTree = "<group>";
@@ -154,9 +166,13 @@
 				9BFCE2D823D7399100C30AFC /* AppDelegate.swift in Sources */,
 				9B7AAA8D23D8889A00124C42 /* CountryListViewController.swift in Sources */,
 				9B7AAA8723D8882700124C42 /* MapViewViewController.swift in Sources */,
+				9B41709723D8C1B100254CEE /* coreData.xcdatamodeld in Sources */,
 				9B7AAA8923D8885800124C42 /* ListViewController.swift in Sources */,
 				9B7AAA8B23D8887A00124C42 /* AddDataViewController.swift in Sources */,
+				9B41709A23D8C34700254CEE /* MyProject+CoreDataClass.swift in Sources */,
 				9BFCE2DA23D7399100C30AFC /* SceneDelegate.swift in Sources */,
+				9B41709B23D8C34700254CEE /* MyProject+CoreDataProperties.swift in Sources */,
+				9B41709423D8C11E00254CEE /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +368,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9B41709523D8C1B100254CEE /* coreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9B41709623D8C1B100254CEE /* coreData.xcdatamodel */,
+			);
+			currentVersion = 9B41709623D8C1B100254CEE /* coreData.xcdatamodel */;
+			path = coreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9BFCE2CC23D7399100C30AFC /* Project object */;
 }
