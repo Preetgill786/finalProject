@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var searchbar: UISearchBar!
     @IBOutlet weak var segmentControl: UISegmentedControl!
     
     @IBOutlet weak var MapView: UIView!
@@ -19,13 +20,17 @@ class ViewController: UIViewController {
         if sender.selectedSegmentIndex == 0{
             MapView.alpha = 1
             ListView.alpha = 0
+            searchbar.isHidden = true
         }else{
             MapView.alpha = 0
             ListView.alpha = 1
+             searchbar.isHidden = false
         }
     }
     
-    
+    override func viewWillAppear(_ animated: Bool) {
+       
+    }
     
     
     override func viewDidLoad() {
